@@ -9,11 +9,10 @@ use Symfony\Component\Routing\Annotation\Route;
 class VisualController extends AbstractController
 {
     /**
-     * @Route("/", name="visual")
+     * @Route("/visual", name="visual")
      */
     public function index(): Response
     {
-      echo phpinfo();
         return new Response(<<<EOF
         </html>
         <!DOCTYPE html>
